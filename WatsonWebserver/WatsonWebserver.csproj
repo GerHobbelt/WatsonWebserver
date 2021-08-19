@@ -19,7 +19,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/jchristn/WatsonWebserver/master/assets/watson.ico</PackageIconUrl>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+  <PropertyGroup>
     <OutputPath>..\..\..\bin\</OutputPath>
   </PropertyGroup>
 
