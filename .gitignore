@@ -248,3 +248,11 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/
 
+/Test.ContentRoutes/bin/
+/Test.Default/bin/
+/Test.DynamicRoutes/bin/
+/Test.Events/bin/
+/Test.PreRouting/bin/
+/Test.Stream/bin/
+/Test.StaticRoutes/bin/
+
