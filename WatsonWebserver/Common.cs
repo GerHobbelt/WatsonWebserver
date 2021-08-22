@@ -76,7 +76,7 @@ namespace WatsonWebserver
                 Console.WriteLine("Exception while deserializing:");
                 Console.WriteLine(json);
                 Console.WriteLine("");
-                throw e;
+                throw;
             }
         }
 
@@ -232,7 +232,7 @@ namespace WatsonWebserver
 
                             if (includeIntegers)
                             {
-                                url1Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                                url1Tokens.Add(currString.ToLower().Trim());
                             }
 
                             currString = "";
@@ -244,7 +244,7 @@ namespace WatsonWebserver
                         {
                             #region Not-an-Integer
 
-                            url1Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                            url1Tokens.Add(currString.ToLower().Trim());
                             currString = "";
                             continue;
 
@@ -281,7 +281,7 @@ namespace WatsonWebserver
 
                             if (includeIntegers)
                             {
-                                url1Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                                url1Tokens.Add(currString.ToLower().Trim());
                             }
 
                             currString = "";
@@ -293,7 +293,7 @@ namespace WatsonWebserver
                         {
                             #region Not-an-Integer
 
-                            url1Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                            url1Tokens.Add(currString.ToLower().Trim());
                             currString = "";
                             break;
 
@@ -329,7 +329,7 @@ namespace WatsonWebserver
 
                     if (includeIntegers)
                     {
-                        url1Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                        url1Tokens.Add(currString.ToLower().Trim());
                     }
 
                     currString = "";
@@ -340,7 +340,7 @@ namespace WatsonWebserver
                 {
                     #region Not-an-Integer
 
-                    url1Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                    url1Tokens.Add(currString.ToLower().Trim());
                     currString = "";
 
                     #endregion
@@ -389,7 +389,7 @@ namespace WatsonWebserver
 
                             if (includeIntegers)
                             {
-                                url2Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                                url2Tokens.Add(currString.ToLower().Trim());
                             }
 
                             currString = "";
@@ -401,7 +401,7 @@ namespace WatsonWebserver
                         {
                             #region Not-an-Integer
 
-                            url2Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                            url2Tokens.Add(currString.ToLower().Trim());
                             currString = "";
                             continue;
 
@@ -438,7 +438,7 @@ namespace WatsonWebserver
 
                             if (includeIntegers)
                             {
-                                url2Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                                url2Tokens.Add(currString.ToLower().Trim());
                             }
 
                             currString = "";
@@ -450,7 +450,7 @@ namespace WatsonWebserver
                         {
                             #region Not-an-Integer
 
-                            url2Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                            url2Tokens.Add(currString.ToLower().Trim());
                             currString = "";
                             break;
 
@@ -486,7 +486,7 @@ namespace WatsonWebserver
 
                     if (includeIntegers)
                     {
-                        url2Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                        url2Tokens.Add(currString.ToLower().Trim());
                     }
 
                     currString = "";
@@ -497,7 +497,7 @@ namespace WatsonWebserver
                 {
                     #region Not-an-Integer
 
-                    url2Tokens.Add(String.Copy(currString.ToLower().Trim()));
+                    url2Tokens.Add(currString.ToLower().Trim());
                     currString = "";
 
                     #endregion

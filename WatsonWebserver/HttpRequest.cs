@@ -207,9 +207,9 @@ namespace WatsonWebserver
             DestIp = ctx.Request.LocalEndPoint.Address.ToString();
             DestPort = ctx.Request.LocalEndPoint.Port;
             Method = (HttpMethod)Enum.Parse(typeof(HttpMethod), ctx.Request.HttpMethod, true);
-            FullUrl = String.Copy(ctx.Request.Url.ToString().Trim());
-            RawUrlWithQuery = String.Copy(ctx.Request.RawUrl.ToString().Trim());
-            RawUrlWithoutQuery = String.Copy(ctx.Request.RawUrl.ToString().Trim());
+            FullUrl = ctx.Request.Url.ToString().Trim();
+            RawUrlWithQuery = ctx.Request.RawUrl.ToString().Trim();
+            RawUrlWithoutQuery = ctx.Request.RawUrl.ToString().Trim();
             Keepalive = ctx.Request.KeepAlive;
             ContentLength = ctx.Request.ContentLength64;
             Useragent = ctx.Request.UserAgent;
@@ -415,8 +415,8 @@ namespace WatsonWebserver
             Headers = new Dictionary<string, string>();
             for (int i = 0; i < ctx.Request.Headers.Count; i++)
             {
-                string key = String.Copy(ctx.Request.Headers.GetKey(i));
-                string val = String.Copy(ctx.Request.Headers.Get(i));
+                string key = ctx.Request.Headers.GetKey(i);
+                string val = ctx.Request.Headers.Get(i);
                 Headers = Common.AddToDict(key, val, Headers);
             }
 
